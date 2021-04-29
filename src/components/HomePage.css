@@ -1,0 +1,73 @@
+#carousel-image-1 {
+  width: 100%;
+  height: 600px;
+  background-image: url("/Users/jareddrake/Desktop/client-projects/debbie-chavez-cfa/src/images/bailey-anselme-jGBZ_cz7t4Q-unsplash.jpg");
+  background-size: cover; /* or contain depending on what you want */
+  background-position: center center;
+  background-repeat: no-repeat;
+  text-align: center;
+  margin: auto;
+  padding: 0;
+}
+#carousel-image-2 {
+  width: 100%;
+  height: 600px;
+  background-image: url("/Users/jareddrake/Desktop/client-projects/debbie-chavez-cfa/src/images/ben-white-iWv-bGqUfao-unsplash.jpg");
+  background-size: cover; /* or contain depending on what you want */
+  background-position: center center;
+  background-repeat: no-repeat;
+  text-align: center;
+  margin: auto;
+  padding: 0;
+}
+
+#carousel-image-3 {
+  width: 100%;
+  height: 600px;
+  background-image: url("/Users/jareddrake/Desktop/client-projects/debbie-chavez-cfa/src/images/kelly-sikkema-WvVyudMd1Es-unsplash.jpg");
+  background-size: cover; /* or contain depending on what you want */
+  background-position: center center;
+  background-repeat: no-repeat;
+  text-align: center;
+  margin: auto;
+  padding: 0;
+}
+
+.card-img-top {
+  width: 100%;
+  height: 15vw;
+  object-fit: cover;
+}
+
+.carousel-inner .item {
+  opacity: 0;
+  transition: none;
+  transform: translate3d(0, 0, 0) !important;
+}
+
+.carousel-inner .active {
+  transition: opacity 3s ease-in-out;
+  opacity: 1;
+}
+
+.parallax {
+  /* The image used */
+  background-image: url("/Users/jareddrake/Desktop/client-projects/debbie-chavez-cfa/src/images/andy-feliciotti-MCWONeEXhC4-unsplash.jpg");
+
+  /* Set a specific height */
+  min-height: 500px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#extra-link {
+  width: 270px;
+  height: 400px;
+  padding: 20px;
+  margin-top: 80px;
+  border: none;
+}

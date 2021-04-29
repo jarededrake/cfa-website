@@ -1,0 +1,243 @@
+<Carousel
+        className='carousel-main'
+        activeIndex={activeIndex}
+        next={next}
+        previous={previous}
+      >
+        <CarouselIndicators
+          items={items}
+          activeIndex={activeIndex}
+          onClickHandler={goToIndex}
+        />
+        {slides}
+        <CarouselControl
+          direction='prev'
+          directionText='Previous'
+          onClickHandler={previous}
+        />
+        <CarouselControl
+          direction='next'
+          directionText='Next'
+          onClickHandler={next}
+        />
+      </Carousel>
+      <CardDeck>
+        <Card>
+          <CardImg
+            top
+            width='100%'
+            src='/assets/256x186.svg'
+            alt='Card image cap'
+          />
+          <CardBody>
+            <CardTitle tag='h5'>Card title</CardTitle>
+            <CardSubtitle tag='h6' className='mb-2 text-muted'>
+              Card subtitle
+            </CardSubtitle>
+            <CardText>
+              This is a wider card with supporting text below as a natural
+              lead-in to additional content. This content is a little bit
+              longer.
+            </CardText>
+            <Button>Button</Button>
+          </CardBody>
+        </Card>
+        <Card>
+          <CardImg
+            top
+            width='100%'
+            src='/assets/256x186.svg'
+            alt='Card image cap'
+          />
+          <CardBody>
+            <CardTitle tag='h5'>Card title</CardTitle>
+            <CardSubtitle tag='h6' className='mb-2 text-muted'>
+              Card subtitle
+            </CardSubtitle>
+            <CardText>
+              This card has supporting text below as a natural lead-in to
+              additional content.
+            </CardText>
+            <Button>Button</Button>
+          </CardBody>
+        </Card>
+        <Card>
+          <CardImg
+            top
+            width='100%'
+            src='/assets/256x186.svg'
+            alt='Card image cap'
+          />
+          <CardBody>
+            <CardTitle tag='h5'>Card title</CardTitle>
+            <CardSubtitle tag='h6' className='mb-2 text-muted'>
+              Card subtitle
+            </CardSubtitle>
+            <CardText>
+              This is a wider card with supporting text below as a natural
+              lead-in to additional content. This card has even longer content
+              than the first to show that equal height action.
+            </CardText>
+            <Button>Button</Button>
+          </CardBody>
+        </Card>
+      </CardDeck>
+
+      const [activeIndex, setActiveIndex] = useState(0);
+  const [animating, setAnimating] = useState(false);
+
+  const next = () => {
+    if (animating) return;
+    const nextIndex = activeIndex === items.length - 1 ? 0 : activeIndex + 1;
+    setActiveIndex(nextIndex);
+  };
+
+  const previous = () => {
+    if (animating) return;
+    const nextIndex = activeIndex === 0 ? items.length - 1 : activeIndex - 1;
+    setActiveIndex(nextIndex);
+  };
+
+  const goToIndex = (newIndex) => {
+    if (animating) return;
+    setActiveIndex(newIndex);
+  };
+
+  const slides = items.map((item) => {
+    return (
+      <CarouselItem
+        className='carousel'
+        onExiting={() => setAnimating(true)}
+        onExited={() => setAnimating(false)}
+        key={item.src}
+      >
+        <img src={item.src} alt={item.altText} />
+        <CarouselCaption
+          captionText={item.caption}
+          captionHeader={item.caption}
+        />
+      </CarouselItem>
+    );
+  });
+
+  const items = [
+  {
+    src: photo1,
+    altText: "Slide 1",
+    caption: "Slide 1",
+  },
+  {
+    src: photo2,
+    altText: "Slide 2",
+    caption: "Slide 2",
+  },
+  {
+    src: photo3,
+    altText: "Slide 3",
+    caption: "Slide 3",
+  },
+];
+
+ Carousel,
+  CarouselItem,
+  CarouselControl,
+  CarouselIndicators,
+  CarouselCaption,
+  Card,
+  Button,
+  CardImg,
+  CardTitle,
+  CardText,
+  CardDeck,
+  CardSubtitle,
+  CardBody,
+
+  const items = [
+  {
+    src: photo1,
+    altText: "Slide 1",
+    caption: "Slide 1",
+  },
+  {
+    src: photo2,
+    altText: "Slide 2",
+    caption: "Slide 2",
+  },
+  {
+    src: photo3,
+    altText: "Slide 3",
+    caption: "Slide 3",
+  },
+];
+
+<a className='navbar-brand' href>
+            Navbar
+          </a>
+          <button
+            className='navbar-toggler'
+            type='button'
+            data-toggle='collapse'
+            data-target='#navbarNavDropdown'
+            aria-controls='navbarNavDropdown'
+            aria-expanded='false'
+            aria-label='Toggle navigation'
+          >
+            <span className='navbar-toggler-icon'></span>
+          </button>
+          <div className='collapse navbar-collapse' id='navbarNavDropdown'>
+            <ul className='navbar-nav'>
+              <li className='nav-item active'>
+                <a className='nav-link' href>
+                  About <span className='sr-only'>(current)</span>
+                </a>
+              </li>
+              <li className='nav-item'>
+                <a className='nav-link' href>
+                  Get Involved
+                </a>
+              </li>
+              <li className='nav-item'>
+                <a className='nav-link' href>
+                  Advocacy
+                </a>
+              </li>
+              <li className='nav-item dropdown'>
+                <a
+                  className='nav-link dropdown-toggle'
+                  href
+                  id='navbarDropdownMenuLink'
+                  data-toggle='dropdown'
+                  aria-expanded='false'
+                >
+                  Policy Page
+                </a>
+                <div
+                  className='dropdown-menu'
+                  aria-labelledby='navbarDropdownMenuLink'
+                >
+                  <a className='dropdown-item' href>
+                    Action
+                  </a>
+                  <a className='dropdown-item' href>
+                    Another action
+                  </a>
+                  <a className='dropdown-item' href>
+                    Something else here
+                  </a>
+                </div>
+              </li>
+              <li className='nav-item'>
+                <a className='nav-link' href>
+                  Resources
+                </a>
+              </li>
+              <li className='nav-item'>
+                <a className='nav-link' href>
+                  Contact
+                </a>
+              </li>
+            </ul>
+          </div>
+          <button type='button' class='btn btn-primary'>
+            Donate
+          </button>
