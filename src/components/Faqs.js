@@ -4,7 +4,11 @@ import "./Faqs.css";
 const Faqs = () => {
   return (
     <div className='Faqs'>
-      <h1>FAQS</h1>
+      <div class='jumbotron jumbotron-fluid'>
+        <div class='container'>
+          <h1 class='display-4'>FAQS</h1>
+        </div>
+      </div>
     </div>
   );
 };
