@@ -1,9 +1,9 @@
 import React from "react";
-import photo1 from "/Users/jareddrake/Desktop/client-projects/debbie-chavez-cfa/src/images/mak-xIG1sDfZoSA-unsplash.jpg";
-import photo2 from "/Users/jareddrake/Desktop/client-projects/debbie-chavez-cfa/src/images/henry-ravenscroft-cdkocPV7LKY-unsplash.jpg";
-import photo3 from "/Users/jareddrake/Desktop/client-projects/debbie-chavez-cfa/src/images/docusign-TRUpNFYtyyA-unsplash.jpg";
-import photo4 from "/Users/jareddrake/Desktop/client-projects/debbie-chavez-cfa/src/images/derek-sutton-YbgkoJRR2LE-unsplash.jpg";
-import photo5 from "/Users/jareddrake/Desktop/client-projects/debbie-chavez-cfa/src/images/daryan-shamkhali-7zn9UvUyRFE-unsplash.jpg";
+import photo1 from "../images/mak-xIG1sDfZoSA-unsplash.jpg";
+import photo2 from "../images/henry-ravenscroft-cdkocPV7LKY-unsplash.jpg";
+import photo3 from "../images/docusign-TRUpNFYtyyA-unsplash.jpg";
+import photo4 from "../images/derek-sutton-YbgkoJRR2LE-unsplash.jpg";
+import photo5 from "../images/daryan-shamkhali-7zn9UvUyRFE-unsplash.jpg";
 import "./HomePage.css";
 
 const HomePage = (props) => {
