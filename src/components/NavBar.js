@@ -1,6 +1,8 @@
 import React from "react";
+import { Link } from "react-router-dom";
 //import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 //import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
+import brand from "/Users/jareddrake/Desktop/client-projects/debbie-chavez-cfa/src/images/CFA Clear Background.jpg";
 import "./NavBar.css";
 
 const NavBar = (props) => {
@@ -8,7 +10,7 @@ const NavBar = (props) => {
     <nav className='navbar navbar-expand-lg navbar-light bg-light py-4 navbar-default fixed-top'>
       <div className='container'>
         <a className='navbar-brand' href>
-          Navbar
+          <img src={brand} alt='' width='140' height='60' />
         </a>
         <button
           className='navbar-toggler'
@@ -24,9 +26,9 @@ const NavBar = (props) => {
         <div className='collapse navbar-collapse' id='navbarNavDropdown'>
           <ul className='navbar-nav'>
             <li className='nav-item active'>
-              <a className='nav-link' href>
+              <Link to='/' className='nav-link' href>
                 Home <span className='sr-only'>(current)</span>
-              </a>
+              </Link>
             </li>
             <li className='nav-item dropdown'>
               <a
@@ -43,15 +45,15 @@ const NavBar = (props) => {
                 className='dropdown-menu'
                 aria-labelledby='navbarDropdownMenuLink'
               >
-                <a className='dropdown-item' href>
+                <Link to='/cfastaff' className='dropdown-item' href>
                   CFA Staff
-                </a>
-                <a className='dropdown-item' href>
+                </Link>
+                <Link to='/allianceofstates' className='dropdown-item' href>
                   Alliance of States
-                </a>
-                <a className='dropdown-item' href>
+                </Link>
+                <Link to='/faqs' className='dropdown-item' href>
                   FAQ
-                </a>
+                </Link>
               </div>
             </li>
             <li className='nav-item'>
