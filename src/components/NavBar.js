@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 //import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 //import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
-import brand from "/Users/jareddrake/Desktop/client-projects/debbie-chavez-cfa/src/images/CFA Clear Background.jpg";
+import brand from "/Users/jareddrake/Desktop/client-projects/debbie-chavez-cfa/src/images/logo.jpg";
 import "./NavBar.css";
 
 const NavBar = (props) => {
