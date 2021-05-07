@@ -5,3 +5,10 @@
   margin-left: 100px;
   margin-right: 100px;
 }
+.row p {
+  margin: 0;
+  text-align: left;
+}
+.row h5 {
+  text-align: left;
+}
