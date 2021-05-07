@@ -12,3 +12,11 @@
 .row h5 {
   text-align: left;
 }
+.card-text a {
+  color: red;
+  text-decoration: none;
+}
+.card-text a:hover {
+  color: blue;
+  text-decoration: underline;
+}

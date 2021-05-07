@@ -80,7 +80,9 @@ const AllianceOfStates = () => {
                 <p className='card-text'>Phone: 919-807-0800</p>
                 <p className='card-text'>Fax: 919-807-0900</p>
                 <p className='card-text'>
-                  <a href='mailto:admin@ncfamily.org'>admin@ncfamily.org</a>
+                  <a href='mailto:admin@ncfamily.org'>
+                    Email: admin@ncfamily.org
+                  </a>
                 </p>
                 <p className='card-text'>
                   <a href='https://www.ncfamily.org/'>Website: ncfamily.org</a>
@@ -295,7 +297,7 @@ const AllianceOfStates = () => {
                 <p className='card-text'>
                   <a href='http://www.pafamily.org/'>Website: pafamily.org</a>
                 </p>
-                <p className='card-ted'>
+                <p className='card-text'>
                   <a href='http://www.citizenlink.com/?p=28914'>
                     Video Interview: Michael Geer
                   </a>
