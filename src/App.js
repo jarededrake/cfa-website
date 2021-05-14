@@ -6,6 +6,10 @@ import CfaStaff from "./components/CfaStaff";
 import AllianceOfStates from "./components/AllianceOfStates";
 import Faqs from "./components/Faqs";
 import Footer from "./components/Footer";
+import Events from "./components/Events";
+import GetInvolved from "./components/GetInvolved";
+import Alerts from "./components/Alerts";
+import ContactUs from "./components/ContactUs";
 
 function App() {
   return (
@@ -16,6 +20,10 @@ function App() {
         <Route path='/cfastaff' component={CfaStaff} />
         <Route path='/allianceofstates' component={AllianceOfStates} />
         <Route path='/faqs' component={Faqs} />
+        <Route path='/events' component={Events} />
+        <Route path='/getinvolved' component={GetInvolved} />
+        <Route path='/alerts' component={Alerts} />
+        <Route path='/contactus' component={ContactUs} />
       </Router>
       <Footer />
     </div>

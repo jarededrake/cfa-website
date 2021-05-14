@@ -57,25 +57,25 @@ const NavBar = (props) => {
               </div>
             </li>
             <li className='nav-item'>
-              <a className='nav-link' href>
+              <Link to='/events' className='nav-link' href>
                 Events
-              </a>
+              </Link>
             </li>
             <li className='nav-item'>
-              <a className='nav-link' href>
+              <Link to='/getinvolved' className='nav-link' href>
                 Get Involved
-              </a>
+              </Link>
             </li>
 
             <li className='nav-item'>
-              <a className='nav-link' href>
-                Resources
-              </a>
+              <Link to='/alerts' className='nav-link' href>
+                Alerts
+              </Link>
             </li>
             <li className='nav-item'>
-              <a className='nav-link' href>
-                Contact
-              </a>
+              <Link to='/contactus' className='nav-link' href>
+                Contact Us
+              </Link>
             </li>
           </ul>
         </div>
