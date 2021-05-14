@@ -5,6 +5,7 @@ import HomePage from "./components/HomePage";
 import CfaStaff from "./components/CfaStaff";
 import AllianceOfStates from "./components/AllianceOfStates";
 import Faqs from "./components/Faqs";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path='/allianceofstates' component={AllianceOfStates} />
         <Route path='/faqs' component={Faqs} />
       </Router>
+      <Footer />
     </div>
   );
 }
